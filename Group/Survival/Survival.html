@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="images/png" href="https://raw.githubusercontent.com/aoao000/SAILING/main/image/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Survival_menu.css">
+    <link rel="stylesheet" href="./Survival_rwd.css">
+    <title>Survival</title>
+</head>
+<body onscroll="show()" id="scroll">
+    <div id="loading_ing">
+        <embed src="/rocket_load.svg" type="image/svg+xml"  />
+    </div>
+    <div class="to_top" onclick="to_top()" id="to_top"></div>
+    <!-- 目錄 -->
+    <div id="top_bar">
+        <div id="bar_bg">
+            <div class="logo">
+                <a href="../../../index.html"><img src="https://raw.githubusercontent.com/aoao000/SAILING/d71c5f13755e00bafd5b5fde4d4880438eb8086d/Menu/Image/LOGO.svg" alt=""></a>
+            </div>
+        </div>
+        <div id="bar_content">
+            <div id="sns_bar">
+                <a href="http://www.ncyu.edu.tw/etech/" class="icon_link" target="_blank">
+                    <img src="https://raw.githubusercontent.com/aoao000/SAILING/28af3692f5c867708af946365f0271eb51d75280/Menu/Image/Internet.svg" alt="" class="icon ic1">
+                </a>
+                <a href="https://www.facebook.com/NCYU.DEDM.GraduationExhibition" class="icon_link" target="_blank">
+                    <img src="https://raw.githubusercontent.com/aoao000/SAILING/28af3692f5c867708af946365f0271eb51d75280/Menu/Image/fb.svg" alt="" class="icon ic2">
+                </a>
+                <a href="https://www.instagram.com/dedm_expo/" class="icon_link" target="_blank">
+                    <img src="https://raw.githubusercontent.com/aoao000/SAILING/28af3692f5c867708af946365f0271eb51d75280/Menu/Image/ig.svg" alt="" class="icon ic3">
+                </a>
+                <a href="https://youtu.be/_P84y0Azrgg" class="icon_link" target="_blank">
+                    <img src="https://raw.githubusercontent.com/aoao000/SAILING/28af3692f5c867708af946365f0271eb51d75280/Menu/Image/yt.svg" alt="" class="icon ic4">
+                </a>
+            </div>
+            <input id="toggle" type="checkbox">
+            <span class="menu_bg">
+                <div class="div_side_line style1">
+                    <img src="https://raw.githubusercontent.com/aoao000/SAILING/28af3692f5c867708af946365f0271eb51d75280/Menu/Image/Side1.svg" alt="">
+                </div>
+                <div class="div_side_line style2">
+                    <img src="https://raw.githubusercontent.com/aoao000/SAILING/28af3692f5c867708af946365f0271eb51d75280/Menu/Image/Side2.svg" alt="">
+                </div>
+                <div id="menu_link_content">
+                    <div class="link_row">
+                        <a href="../Seren/Seren.html" class="menu_link" target="_blank">
+                            <span class="link_triangle"></span>肆尋<br>
+                            <span class="link_sub">開始一場精神與物質的舒壓之旅</span>
+                            <div class="link_line">
+                                <div class="battery color1" style="--i:0"></div>
+                                <div class="battery color1" style="--i:1"></div>
+                                <div class="battery color1" style="--i:2"></div>
+                                <div class="battery color1" style="--i:3"></div>
+                                <div class="battery color2" style="--i:4"></div>
+                                <div class="battery color2" style="--c:1"></div>
+                                <div class="battery color2" style="--c:2"></div>
+                                <div class="battery color2" style="--c:3"></div>
+                                <div class="battery color3" style="--c:4"></div>
+                                <div class="battery color3" style="--c:5"></div>
+                                <div class="battery color3" style="--c:6"></div>
+                                <div class="battery color3" style="--c:7"></div>
+                            </div>
+                        </a>
+                        <a href="../Moon/Moon.html" class="menu_link" target="_blank">
+                            <span class="link_triangle"></span>和緣月瑟<br><span class="link_sub">掌握緣分的秘訣 月老百科全書</span>
+                            <div class="link_line">
+                                <div class="battery color1" style="--i:0"></div>
+                                <div class="battery color1" style="--i:1"></div>
+                                <div class="battery color1" style="--i:2"></div>
+                                <div class="battery color1" style="--i:3"></div>
+                                <div class="battery color2" style="--i:4"></div>
+                                <div class="battery color2" style="--c:1"></div>
+                                <div class="battery color2" style="--c:2"></div>
+                                <div class="battery color2" style="--c:3"></div>
+                                <div class="battery color3" style="--c:4"></div>
+                                <div class="battery color3" style="--c:5"></div>
+                                <div class="battery color3" style="--c:6"></div>
+                                <div class="battery color3" style="--c:7"></div>
+                            </div>
+                        </a>
+                        <a href="../Stone/Stone.html" class="menu_link" target="_blank">
+                            <span class="link_triangle"></span>石破天驚<br><span class="link_sub">透過VR遊戲, 體驗礦坑學習之旅</span>
+                            <div class="link_line">
+                                <div class="battery color1" style="--i:0"></div>
+                                <div class="battery color1" style="--i:1"></div>
+                                <div class="battery color1" style="--i:2"></div>
+                                <div class="battery color1" style="--i:3"></div>
+                                <div class="battery color2" style="--i:4"></div>
+                                <div class="battery color2" style="--c:1"></div>
+                                <div class="battery color2" style="--c:2"></div>
+                                <div class="battery color2" style="--c:3"></div>
+                                <div class="battery color3" style="--c:4"></div>
+                                <div class="battery color3" style="--c:5"></div>
+                                <div class="battery color3" style="--c:6"></div>
+                                <div class="battery color3" style="--c:7"></div>
+                            </div>
+                        </a>
+                        
+                    </div>
+                    <div class="link_row">
+                        <a href="../Sugar/Sugar.html" class="menu_link" target="_blank">
+                            <span class="link_triangle"></span>糖都蔗款事<br><span class="link_sub">糖都的時光旅行—從糖廠看虎尾</span>
+                            <div class="link_line">
+                                <div class="battery color1" style="--i:0"></div>
+                                <div class="battery color1" style="--i:1"></div>
+                                <div class="battery color1" style="--i:2"></div>
+                                <div class="battery color1" style="--i:3"></div>
+                                <div class="battery color2" style="--i:4"></div>
+                                <div class="battery color2" style="--c:1"></div>
+                                <div class="battery color2" style="--c:2"></div>
+                                <div class="battery color2" style="--c:3"></div>
+                                <div class="battery color3" style="--c:4"></div>
+                                <div class="battery color3" style="--c:5"></div>
+                                <div class="battery color3" style="--c:6"></div>
+                                <div class="battery color3" style="--c:7"></div>
+                            </div>
+                        </a>
+                        <a href="../Happy/Happy.html" class="menu_link" target="_blank">
+                            <span class="link_triangle"></span>快樂旅遊家<br><span class="link_sub">透過RPG遊戲, 快樂學習英文</span>
+                            <div class="link_line">
+                                <div class="battery color1" style="--i:0"></div>
+                                <div class="battery color1" style="--i:1"></div>
+                                <div class="battery color1" style="--i:2"></div>
+                                <div class="battery color1" style="--i:3"></div>
+                                <div class="battery color2" style="--i:4"></div>
+                                <div class="battery color2" style="--c:1"></div>
+                                <div class="battery color2" style="--c:2"></div>
+                                <div class="battery color2" style="--c:3"></div>
+                                <div class="battery color3" style="--c:4"></div>
+                                <div class="battery color3" style="--c:5"></div>
+                                <div class="battery color3" style="--c:6"></div>
+                                <div class="battery color3" style="--c:7"></div>
+                            </div>
+                        </a>
+                        <a href="../Mango/Mango.html" class="menu_link" target="_blank">
+                            <span class="link_triangle"></span>芒Go了沒<br><span class="link_sub">親子共讀 再芒也要學習新知</span>
+                            <div class="link_line">
+                                <div class="battery color1" style="--i:0"></div>
+                                <div class="battery color1" style="--i:1"></div>
+                                <div class="battery color1" style="--i:2"></div>
+                                <div class="battery color1" style="--i:3"></div>
+                                <div class="battery color2" style="--i:4"></div>
+                                <div class="battery color2" style="--c:1"></div>
+                                <div class="battery color2" style="--c:2"></div>
+                                <div class="battery color2" style="--c:3"></div>
+                                <div class="battery color3" style="--c:4"></div>
+                                <div class="battery color3" style="--c:5"></div>
+                                <div class="battery color3" style="--c:6"></div>
+                                <div class="battery color3" style="--c:7"></div>
+                            </div>
+                        </a>
+                        
+                    </div>
+                    <div class="link_row">
+                        <a href="../Cat/Cat.html" class="menu_link" target="_blank">
+                            <span class="link_triangle"></span>Catopia<br><span class="link_sub">和貓咪展開一場2D RPG的旅程</span>
+                            <div class="link_line">
+                                <div class="battery color1" style="--i:0"></div>
+                                <div class="battery color1" style="--i:1"></div>
+                                <div class="battery color1" style="--i:2"></div>
+                                <div class="battery color1" style="--i:3"></div>
+                                <div class="battery color2" style="--i:4"></div>
+                                <div class="battery color2" style="--c:1"></div>
+                                <div class="battery color2" style="--c:2"></div>
+                                <div class="battery color2" style="--c:3"></div>
+                                <div class="battery color3" style="--c:4"></div>
+                                <div class="battery color3" style="--c:5"></div>
+                                <div class="battery color3" style="--c:6"></div>
+                                <div class="battery color3" style="--c:7"></div>
+                            </div>
+                        </a>
+                        <a href="../Sober/Sober.html" class="menu_link" target="_blank">
+                            <span class="link_triangle"></span>Sober<br><span class="link_sub">臥底、尋找 — 揭開新能源黑幕</span>
+                            <div class="link_line">
+                                <div class="battery color1" style="--i:0"></div>
+                                <div class="battery color1" style="--i:1"></div>
+                                <div class="battery color1" style="--i:2"></div>
+                                <div class="battery color1" style="--i:3"></div>
+                                <div class="battery color2" style="--i:4"></div>
+                                <div class="battery color2" style="--c:1"></div>
+                                <div class="battery color2" style="--c:2"></div>
+                                <div class="battery color2" style="--c:3"></div>
+                                <div class="battery color3" style="--c:4"></div>
+                                <div class="battery color3" style="--c:5"></div>
+                                <div class="battery color3" style="--c:6"></div>
+                                <div class="battery color3" style="--c:7"></div>
+                            </div>
+                        </a>
+                        <a href="../Survival/Survival.html" class="menu_link" target="_blank">
+                            <span class="link_triangle"></span>Survival<br><span class="link_sub">桌遊x生存x三方競爭x多變</span>
+                            <div class="link_line">
+                                <div class="battery color1" style="--i:0"></div>
+                                <div class="battery color1" style="--i:1"></div>
+                                <div class="battery color1" style="--i:2"></div>
+                                <div class="battery color1" style="--i:3"></div>
+                                <div class="battery color2" style="--i:4"></div>
+                                <div class="battery color2" style="--c:1"></div>
+                                <div class="battery color2" style="--c:2"></div>
+                                <div class="battery color2" style="--c:3"></div>
+                                <div class="battery color3" style="--c:4"></div>
+                                <div class="battery color3" style="--c:5"></div>
+                                <div class="battery color3" style="--c:6"></div>
+                                <div class="battery color3" style="--c:7"></div>
+                            </div>
+                        </a>
+                        
+                    </div>
+                    <div class="link_row">
+                        <a href="../Flori/Flori.html" class="menu_link" target="_blank">
+                            <span class="link_triangle"></span>Flori<br><span class="link_sub">利用卡牌, 成為flori的勝利家</span>
+                            <div class="link_line">
+                                <div class="battery color1" style="--i:0"></div>
+                                <div class="battery color1" style="--i:1"></div>
+                                <div class="battery color1" style="--i:2"></div>
+                                <div class="battery color1" style="--i:3"></div>
+                                <div class="battery color2" style="--i:4"></div>
+                                <div class="battery color2" style="--c:1"></div>
+                                <div class="battery color2" style="--c:2"></div>
+                                <div class="battery color2" style="--c:3"></div>
+                                <div class="battery color3" style="--c:4"></div>
+                                <div class="battery color3" style="--c:5"></div>
+                                <div class="battery color3" style="--c:6"></div>
+                                <div class="battery color3" style="--c:7"></div>
+                            </div>
+                        </a>
+                        <a href="../Crumble/Crumble.html" class="menu_link" target="_blank">
+                            <span class="link_triangle"></span>Crumble<br><span class="link_sub">2D橫向DOT動作遊戲</span>
+                            <div class="link_line">
+                                <div class="battery color1" style="--i:0"></div>
+                                <div class="battery color1" style="--i:1"></div>
+                                <div class="battery color1" style="--i:2"></div>
+                                <div class="battery color1" style="--i:3"></div>
+                                <div class="battery color2" style="--i:4"></div>
+                                <div class="battery color2" style="--c:1"></div>
+                                <div class="battery color2" style="--c:2"></div>
+                                <div class="battery color2" style="--c:3"></div>
+                                <div class="battery color3" style="--c:4"></div>
+                                <div class="battery color3" style="--c:5"></div>
+                                <div class="battery color3" style="--c:6"></div>
+                                <div class="battery color3" style="--c:7"></div>
+                            </div>
+                        </a>
+                        <a href="../Nursery/Nursery.html" class="menu_link" target="_blank">
+                            <span class="link_triangle"></span>Nursery<br><span class="link_sub">帶你了解幼兒園優質管理</span>
+                            <div class="link_line">
+                                <div class="battery color1" style="--i:0"></div>
+                                <div class="battery color1" style="--i:1"></div>
+                                <div class="battery color1" style="--i:2"></div>
+                                <div class="battery color1" style="--i:3"></div>
+                                <div class="battery color2" style="--i:4"></div>
+                                <div class="battery color2" style="--c:1"></div>
+                                <div class="battery color2" style="--c:2"></div>
+                                <div class="battery color2" style="--c:3"></div>
+                                <div class="battery color3" style="--c:4"></div>
+                                <div class="battery color3" style="--c:5"></div>
+                                <div class="battery color3" style="--c:6"></div>
+                                <div class="battery color3" style="--c:7"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="menu_sns_content">
+                    <div id="menu_sns">
+                        <a href="http://www.ncyu.edu.tw/etech/" class="icon_link" target="_blank">
+                            <img src="https://raw.githubusercontent.com/aoao000/SAILING/28af3692f5c867708af946365f0271eb51d75280/Menu/Image/Internet.svg" alt="嘉義大學_數位學習設計與管理學系_官方網站" class="m_icon mc1">
+                        </a>
+                        <a href="https://www.facebook.com/NCYU.DEDM.GraduationExhibition" class="icon_link"
+                            target="_blank">
+                            <img src="https://raw.githubusercontent.com/aoao000/SAILING/28af3692f5c867708af946365f0271eb51d75280/Menu/Image/fb.svg" alt="全數啟航_facebook_臉書粉絲專頁" class="m_icon mc2">
+                        </a>
+                        <a href="https://www.instagram.com/dedm_expo/" class="icon_link" target="_blank">
+                            <img src="https://raw.githubusercontent.com/aoao000/SAILING/28af3692f5c867708af946365f0271eb51d75280/Menu/Image/ig.svg" alt="全數啟航_instagram" class="m_icon mc3">
+                        </a>
+                        <a href="https://youtu.be/_P84y0Azrgg" class="icon_link" target="_blank">
+                            <img src="https://raw.githubusercontent.com/aoao000/SAILING/28af3692f5c867708af946365f0271eb51d75280/Menu/Image/yt.svg" alt="全數啟航_youtube_官方頻道" class="m_icon mc4">
+                        </a>
+                    </div>
+                </div>
+                <a href="../../../index.html" class="icon_link" target="_blank">
+                    <img src="https://raw.githubusercontent.com/aoao000/SAILING/79a94d831811d1ce7df0a790d8c29056e97c2f6f/Menu/Image/word.svg" alt="" id="menu_logo">
+                </a>
+                <div id="menu_line"></div>
+            </span>
+            <div id="menu_bar">
+                <span class="menu_text">MENU&ensp;</span>
+                <div id="menu_btn">
+                    <label for="toggle" class="la">
+                        <svg class="ham hamRotate" viewbox="0 0 100 100" width="80"
+                            onclick="this.classList.toggle('active')">
+                            <path class="line top"
+                                d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                            <path class="line middle" d="m 30,50 h 40" />
+                            <path class="line bottom"
+                                d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                        </svg>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 內容 -->
+    <div class="big_card">
+        <div class="Top_info">
+            <div class="hashtag">#桌遊&ensp;#領地爭奪&ensp;#多結局</div>
+            <div class="group_name">Survival</div>
+            <img src="/Group/Survival/Survival_image/Survival_main.jpg" alt="">
+        </div>
+        <div class="bottom_info">
+            <div class="member">組員:陳怡妙、蔡宜恩、蘇庭以、林鈺璇</div>
+            <div class="teacher">指導教授:&ensp;劉漢欽老師</div>
+            <div class="leading_text">
+                在一片未知的大陸上，生存著的生物分成三大勢力-人類、動物、植物，在這片大陸上一切未來尚且為謎…..數值的疊加、效果的觸發、技能的不同，交織形成了勢力間的競爭，還有多種的故事結局可供探索，是一款腦力與運氣缺一不可的桌遊。
+            </div>
+        </div>
+    </div>
+    <div class="info_content">
+        <!--第一區段 -->
+        <div class="info">
+            <div class="promotional_video_title">宣傳影片</div>
+            <div class="promotional_video">
+                <iframe width="885" height="498" src="https://www.youtube.com/embed/A6Go-TLJwuQ" title="⟪Survival⟫桌遊前導宣傳影片" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+        <!--第二區段 -->
+        <div class="info">
+                <div class="title3">
+                    Survival /桌遊x生存/三方競爭x多變<br>
+                    <p>&ensp;&ensp;我們想要製作一款需求人數不高，簡單三個人就可以開桌的遊戲。我們在選題後決定以”Survival”為名，人類、動物及植物三方爭奪生存空間為出發點的遊戲故事。
+                        在三方爭奪生存空間的摩擦中，我們希望傳達的是，其實我們和植物、動物是一樣的。都是為了自己的生存在努力著。
+                        而在遊戲的結局，我們設計了幾個故事。遊玩者可以在遊玩後依照遊玩的結局，尋找出自己走出的故事結局。也希望這些結局可以引導遊玩者思考關於人類與大自然動植物間的交互關係。</p>
+                </div>
+                <div class="content3">
+                    <img src="/Group/Survival/Survival_image/Survival_p1.jpg" width="95%" alt="">
+                    <img src="/Group/Survival/Survival_image/Survival_p2.jpg" width="95%" alt="">
+                </div>
+        </div>
+        
+        <div class="info">
+            <div class="more_website">
+                    <div class="line"></div>
+                    <a href="#"><img src="/Menu/Image/ig.svg" alt=""></a>
+                    <a href="https://centimeterbain.github.io/Survival/"><img src="/Menu/Image/Internet.svg" alt=""></a>
+            </div>
+        </div>
+        <!--第六區段 -->
+        <div class="more_info">
+                <div class="member_info">
+                    <div class="member">
+                        <img src="/Group/Survival/Survival_image/Survival_m3.jpg" alt="">
+                        <div class="member_name">陳怡妙</div>
+                        <div class="work_position">網頁設計、遊戲開發</div> 
+                    </div>
+                    <div class="member">
+                        <img src="/Group/Survival/Survival_image/Survival_m1.jpg"" alt="">
+                        <div class="member_name">蔡宜恩</div>
+                        <div class="work_position">遊戲開發、聯絡公關</div>
+                    </div>
+                    <div class="member">
+                        <img src="/Group/Survival/Survival_image/Survival_m3.jpg"" alt="">
+                        <div class="member_name">蘇庭以</div>
+                        <div class="work_position">美術設計</div>
+                    </div>
+                    <div class="member">
+                        <img src="/Group/Survival/Survival_image/Survival_m4.jpg"" alt="">
+                        <div class="member_name">林鈺璇</div>
+                        <div class="work_position">美術設計</div>
+                    </div>
+                </div>
+                <div class="s112">112</div>
+        </div>
+        <div class="footer">
+                ©&ensp;2023&ensp;國立嘉義大學&ensp;數位學習設計與管理學系
+        </div>
+    </div>
+</body>
+    <script src="./Survival_con.js"></script>
+</html>
